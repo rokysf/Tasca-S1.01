@@ -6,16 +6,17 @@ public abstract class Instrumento {
 	private double precio;
 
 	public Instrumento(String nombre, double precio) {
+		super();
 		this.nombre = nombre;
 		this.precio = precio;
 	}
 
 	static {
-		System.out.println("Bloque de inicializaciï¿½n estatico");
+		System.out.println("Bloque de inicialización estatico");
 	}
 
 	{
-		System.out.println("Bloque de inicializaciï¿½n");
+		System.out.println("Bloque de inicialización");
 	}
 
 	public abstract void tocar();
